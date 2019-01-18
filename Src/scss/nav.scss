@@ -1,0 +1,77 @@
+/* Scss Document */
+
+
+$link-color:#FFFFFF;
+//inkapsling av menyn
+nav {
+	
+	position: relative;
+	text-align: left;
+	height: 2%;
+	width:95%;
+	margin: auto;
+	background-color:#271C2A;
+    padding-top: 1%;
+	padding-bottom:1%;
+	padding-left: 5%;
+	
+	 
+	ul {
+		list-style: none;
+	}
+	
+	li { 
+		display: inline;
+	    padding-right: 1.5%;
+	}
+	
+	a  {
+		text-decoration: none;
+	    color:#DCD4D4; font-family:"antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        font-size: 0.8VW;  /* texten är 1.2 gånger större än ursprungliga*/
+	    margin-bottom: 5px;
+		
+	}
+	
+	a visited { 
+		color: $link-color;
+		
+		
+	}
+	
+	a hover {
+		color: $link-color;
+	}
+	
+	
+	#follow {
+		position: absolute;
+	    float:right;
+	    top: 0;
+	    left: 90%;
+	    padding-top: 0.8%;
+	 
+		
+		
+		#fb, #tw {
+			width: 18%;
+	        height: auto;
+			padding-left: 1%;
+		
+		
+		}
+		
+		.follow {
+			color:#211E1E; font-family: "antic-didone", Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	        font-size: 0.7VW;
+	        float: right;
+			color:#DCD4D4;
+			padding-top: 1%;
+			
+			
+			
+		}
+		
+		
+	}
+}

@@ -1,0 +1,454 @@
+/* Scss Document */
+
+//importerar nav och footer scss
+@import 'nav';
+@import 'footer';
+
+
+* {
+	
+	margin:0;
+	padding:0;
+}
+
+
+
+@mixin padding {
+	padding:1.5%;
+	border-radius: 7px;
+    background-color: #FEF8FF;
+	float: right;
+	border: 1px solid #BFA5C0;
+}
+
+
+
+@mixin loginregister {
+	margin-top: 4%;
+	width: 49%;
+	padding: 2%;
+float: left;
+	color: #DCD4D4;
+	background-color: #271C2A;
+	border: 1px solid #BFA5C0;
+	border-radius: 5px;
+	font-size: 0.8VW;
+}
+
+body {
+	
+	
+	background-color:#FEF8FF;
+	
+	#container{
+		
+	
+	    width: 60%;
+	    background-color:#FFFFFF;
+	    padding-top: 0.7%;
+		padding-right: 0.9%;
+		padding-bottom: 0.7%;
+	    border-radius: 7px;
+	    margin: auto;
+	    height: auto;
+		overflow: auto;
+		margin-top: 2.5%;
+		border: 1px solid #BF99C0;
+		box-shadow: 0px 1px 1px 0.5px #BFA5C0;
+		
+		
+	
+		
+		.wrapper {
+			float: left;
+			width:37.5%;
+			height: auto;
+			
+			
+		}
+		
+		.wrapper2 {
+			
+			width:70%;
+			float: left;
+			height: auto;
+
+			.posts {
+			
+			width: 102.6%;
+	     	height: auto;
+			padding-left: 1.5%;
+			padding-right: 1.5%;
+			padding-top: 1.5%;
+			padding-bottom: 0.5%;
+			background-color: #D1D1D1;
+			float: left;
+		    border-bottom-left-radius: 7px;
+			border-bottom-right-radius: 7px;
+			border: 1px solid #BFA5C0;
+			margin-left: 2%;
+				
+			
+				
+				#writebutton, #livsstilbutton {
+				width: 9%;
+				padding: 1%;
+				color:#4F4F4F;
+				background-color: #E9E9E9;
+				border: 1px solid #BFA5C0;
+				border-radius: 5px;
+				float: right;
+			
+				
+			}
+			
+			.write {
+				width:96%;
+				background-color:#E9E9E9;
+				border-radius: 7px;
+			    border: 1px solid #BFA5C0;
+				padding: 2%;
+				margin-bottom: 1%;
+				height: 50%;
+				
+				
+			}
+			
+			.writename {
+				
+				width:25%;
+				background-color:#E9E9E9;
+				border-radius: 7px;
+			    border: 1px solid #BFA5C0;
+				padding: 1%;
+				
+				
+				
+			}
+
+				.senaste {
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+				color: #262525;
+				font-size: 1.1VW;
+				
+			}
+				
+				
+				
+		
+			  #workoutposts, #livsstilposts {
+				width: 100%;
+				height: auto;
+			
+	
+				
+			 .inlaggworkout {
+				width:96%;
+				background-color:#E9E9E9;
+				border-radius: 7px;
+			    border: 1px solid #BFA5C0;
+				padding: 2%;
+				margin-bottom: 1%;
+				height: 30%;
+				padding-bottom: 5%;
+				
+				
+				.author {
+					font-size: 0.7VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 4%;
+					color:#000000;}
+					
+				.deletebutton2 {
+					width: 15%;
+				    padding: 1%;
+				    color:#4F4F4F;
+				    border: 1px solid #ADADAD;
+			        border-radius: 5px;
+			        float: right;
+					font-size: 0.6VW;
+				}
+				  
+				.authormessage {
+					font-size: 0.8VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 4%;
+					color: #464646; }
+				
+				.created {
+					font-size: 0.5VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 2%;
+					color: #000000;
+					float: left;
+				    }
+				
+				}
+			}
+		}
+	}
+		
+		
+		
+		.flik {
+			width:97%;
+			padding-top: 1.5%;
+			border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+			margin-left: 3.5%;
+			background-color: #271C2A;
+			height: 0.5%;
+			
+			
+			.fliktext {
+				color:#DCD4D4;
+				font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				font-size: 0.75VW;
+				padding-bottom: 1%;
+				padding-left: 2%;
+			}
+		}
+		
+		.flik2{
+			width:106%;
+			padding-top: 1%;
+		border-top-left-radius: 7px;
+			border-top-right-radius: 7px;
+			margin-left: 2%;
+			background-color: #271C2A;
+		
+			
+			.fliktext {
+				color:#DCD4D4;
+				font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				font-size: 0.75VW;
+				padding-bottom: 1%;
+				padding-left: 2%;
+			}
+			
+			
+		}
+	
+		
+		#workout {
+			
+			width: 100%;
+			height: 10px;
+			border: 0;
+           box-shadow: inset 0 12px 12px -12px rgba(22, 198, 255, 0.6);
+	
+			
+		}
+	
+		#mode {
+			
+			width: 100%;
+			height: 10px;
+			border:  0;
+			box-shadow: inset 0 12px 12px -12px rgba(251, 254, 0, 0.6);
+		}
+			
+		
+		#banner {
+			width:98.5%;
+			height: auto;
+			padding-left: 1.5%;
+			padding-bottom: 1%;
+		}
+		
+		.sidebar{
+			width: 90.5%;
+			height: auto;
+			padding: 3%;
+			background-color:#e9ebee;
+			border-bottom-left-radius: 7px;
+			border-bottom-right-radius: 7px;
+			border: 1px solid #C9C9C9;//#B7B7B7;//#BFA5C0;
+			margin-left: 3.5%;
+		
+		
+			
+			#posted {
+			width: 	100%;
+			height: auto;	
+			}
+			
+			
+			.inlagg {
+				width:95%;
+				background-color:#F8F8F8;
+				border-radius: 7px;
+			    border: 1px solid #C9C9C9;
+				padding: 2%;
+				margin-bottom: 2%;
+				height: 30%;
+				padding-bottom: 7%;
+				
+				.author {
+					font-size: 0.6VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 4%;
+					color:#000000;}
+					
+				.deletebutton {
+					width: 30%;
+				    padding: 1%;
+				    color:#4F4F4F;
+				    border: 1px solid #ADADAD;
+			        border-radius: 5px;
+			        float: right;
+					font-size: 0.6VW;
+		 					
+				}
+				
+				.authormessage {
+					font-size: 0.7VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 4%;
+					color: #464646; }
+				
+				.created {
+					font-size: 0.5VW;
+					font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+					padding-bottom: 2%;
+					color: #000000;
+					float: left;
+				}
+				
+				
+			}
+			#writebutton {
+				width: 18%;
+				padding: 2%;
+				color:#4F4F4F;
+				background-color: #E9E9E9;
+				border: 1px solid #BFA5C0;
+				border-radius: 5px;
+				float: right;
+				
+			}
+			
+			.write {
+				width:100%;
+				background-color:#E9E9E9;
+				border-radius: 7px;
+			    border: 1px solid #BFA5C0;
+				padding: 2%;
+				margin-bottom: 2%;
+				height: 10%;
+				float: left;
+				
+				
+			}
+			
+			.writename {
+				
+				width:35%;
+				background-color:#E9E9E9;
+				border-radius: 7px;
+			    border: 1px solid #BFA5C0;
+				padding: 2%;
+				margin-bottom: 2%;
+				
+				
+			}
+		
+		}
+		
+		
+		
+		#search {
+			
+			width:20%;
+			height: auto;
+			 @include padding;
+			display: flex;
+			
+				.post {
+				width: 20%;
+				padding: 1%;
+				color: #DCD4D4;
+				background-color: #271C2A;
+				border: 1px solid #BFA5C0;
+				border-radius: 5px;
+				float: left;
+				display: inline;
+					font-size: 0.8VW;
+					
+				
+			}
+			
+				.txt1 {
+				border-radius: 5px;
+				border: 1px solid #BFA5C0;
+				padding: 3%;
+				width: 70%;
+				margin-bottom: 2%;
+					margin-right: 2%;
+		display: inline;
+				float: left;
+				
+			
+			}
+			
+		}
+		
+	
+		.message {
+			width: 20%;
+			margin-top: 1%;
+			@include padding;
+			
+			hr {
+				color: 1px solid #0F0419;
+			}
+			ul {
+				list-style: none;
+			}
+			li {
+			
+			font-size: 1.0VW;
+			font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+			line-height: 1.5;
+			color: #151515;
+			
+		}
+			.justnu {
+				font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+				font-size: 1.3VW;
+				line-height: 1.5;
+				color:#272727;
+				
+			}
+			
+	}
+		
+			.txt {
+				border-radius: 5px;
+				border: 1px solid #BFA5C0;
+				padding: 2%;
+				width: 95%;
+				margin-bottom: 2%;
+			
+			}
+			
+			
+		
+		
+		#register {
+			 
+				@include loginregister;
+
+		}
+		
+		#login {
+			margin-right: 2%;
+		     @include loginregister;
+			
+		}
+		
+		
+	}
+	
+}
+		
