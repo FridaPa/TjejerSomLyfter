@@ -6,7 +6,7 @@
 //hämtar URL ADRESSEN TILL WEBBTJÄNSTEN
 var URL = "http://localhost/Projektbloggkopia/TjejerSomLyfter/Pub/service.php/livsstil/";
 
-
+//var URL = "http://studenter.miun.se/~frpa1600/writeable/dt173g/Pub/service.php/livsstil/";
 
 
 document.addEventListener("DOMContentLoaded", function(){ // Wait for DOM tree to get parsed

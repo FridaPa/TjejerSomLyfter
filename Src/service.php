@@ -41,11 +41,12 @@ $input = json_decode(file_get_contents('php://input'), true);
 
 // Send return header information
 header("Content-Type: application/json; charset=UTF-8"); //charset=UTF-8
-header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Methods: GET, POST, DELETE");
 
 //ansluter till databasen
-$conn = mysqli_connect("localhost","fridapp","password","forum") or die("Error connecting to database.");
-$db_connected = mysqli_select_db($conn, "forum"); //arbeta med DB forum 
+//$conn = mysqli_connect('http://studentmysql.miun.se', 'frpa1600', 'zb6YbU01tC', 'frpa1600') or die("Error connecting to database.");
+$conn = mysqli_connect('localhost', 'fridapp', 'password', 'forum') or die("Error connecting to database.");
+$db_connected = mysqli_select_db($conn, 'forum'); //arbeta med DB forum 
 
 
 //om det är från table livsstil
