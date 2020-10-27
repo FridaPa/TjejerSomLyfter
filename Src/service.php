@@ -23,21 +23,16 @@ Mittuniversitetet
 // Get HTTP method, path and input of the request
 $method = $_SERVER['REQUEST_METHOD'];
 
-
 // ett sätt att analysera sökvägar för webbadressen som tjänsten kallas för.
 //$request = explode('/', trim($_SERVER['PATH_INFO'], '/'));
 //$pi= (isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '');
 //$request = explode("/", substr($pi,1));
-
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-
 
 //json_decode tar jsondata och gör till php variabel
 //skickar json till servern via json_decode som gör om den till en assoc OM true
 //To receive RAW post data in PHP, you can use the php://input stream
 $input = json_decode(file_get_contents('php://input'), true);
-
-
 
 // Send return header information
 header("Content-Type: application/json; charset=UTF-8"); //charset=UTF-8
@@ -47,7 +42,6 @@ header("Access-Control-Allow-Methods: GET, POST, DELETE");
 //$conn = mysqli_connect('http://studentmysql.miun.se', 'frpa1600', 'zb6YbU01tC', 'frpa1600') or die("Error connecting to database.");
 $conn = mysqli_connect('localhost', 'fridapp', 'password', 'forum') or die("Error connecting to database.");
 $db_connected = mysqli_select_db($conn, 'forum'); //arbeta med DB forum 
-
 
 //om det är från table livsstil
 if($request[0] == "livsstil"){ 
@@ -76,12 +70,10 @@ if($request[0] == "livsstil"){
 			$row_arr['name'] = $row['name'];
 			$row_arr['message'] = $row['message'];
 		    $row_arr['created'] = $row['created'];
-			array_push($livsstil,$row_arr);
-		
-		
+			array_push($livsstil,$row_arr);	
 	}  
 	
-		echo json_encode($livsstil);
+	 echo json_encode($livsstil);
 	break;	
 	
 	//ta bort medd -  DELETE
@@ -94,15 +86,9 @@ if($request[0] == "livsstil"){
 	case "PUT":
 		$sql = "UPDATE livsstil SET message = '" . $input['message'] . "', name = '" . $input['name'] . "', created = '" . $input['created'] . "' WHERE id = " . $request[1] . ";";
 	    mysqli_query($conn, $sql);
-	    break;
-	
-	}
-	
+	    break;	
+	}	
 } 
-
-
-
-
 
 //Om det är fr table workout
 else if($request[0] == "workout"){
@@ -133,9 +119,7 @@ else if($request[0] == "workout"){
 			$row_arr['name'] = $row['name'];
 			$row_arr['message'] = $row['message'];
 		    $row_arr['created'] = $row['created'];
-			 array_push($harr,$row_arr);
-		
-		
+			 array_push($harr,$row_arr)			
 	}
 		echo json_encode($harr);	
 		
@@ -149,11 +133,8 @@ else if($request[0] == "workout"){
 	        case "PUT":
 		    $sql = "UPDATE workout SET message = '" . $input['message'] . "', name = '" . $input['name'] . "', created = '" . $input['created'] . "' WHERE id = " . $request[1] . ";";
 	        mysqli_query($conn, $sql);
-	        break;
-	
-		
-} 	
-	
+	        break;		
+    } 	
 } 
 
 else {
@@ -161,18 +142,5 @@ else {
 	exit();
 }
 
-
-
-
 mysqli_close($conn);
-
-
-
-
-
-
-//http://studentmysql.miun.se', 'frpa1600', 'CCentrumbanan263?#', 'userlogin'
-
-
-
 ?>
